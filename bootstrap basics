@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" class="d-block w-100" alt="..." height="600" width="1000">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1682686580433-2af05ee670ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." height="600" width="1000">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1702208338334-c1f15ea7f57c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." height="600" width="1000">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container-xxl bd-gutter">
+        <div class="col-md-8 mx-auto text-center">
+          <a class="d-flex flex-column flex-lg-row justify-content-center align-items-center mb-4 text-dark lh-sm text-decoration-none" href="https://blog.getbootstrap.com/">
+            <strong class="d-sm-inline-block p-2 me-2 mb-2 mb-lg-0 rounded-3 masthead-notice">New in v5.3</strong>
+            <span class="text-body-secondary">Color mode support, expanded color palette, and more!</span>
+          </a>
+          <img src="/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="200" height="165" alt="Bootstrap" class="d-none d-sm-block mx-auto mb-3">
+          <h1 class="mb-3 fw-semibold lh-1">Build fast, responsive sites with&nbsp;Bootstrap</h1>
+          <p class="lead mb-4">
+            Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+          </p>
+          <div class="d-flex flex-column flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4">
+            <div class="d-inline-block v-align-middle fs-5">
+              <div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@5.3.2</span></span></code></pre></div></div>
+            </div>
+            <a href="/docs/5.3/getting-started/introduction/" class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">
+              <svg class="bi me-2" aria-hidden="true"><use xlink:href="#book-half"></use></svg>
+              Read the docs
+            </a>
+          </div>
+          <p class="text-body-secondary mb-0">
+            Currently <strong>v5.3.2</strong>
+            <span class="px-1">·</span>
+            <a href="/docs/5.3/getting-started/download/" class="link-secondary">Download</a>
+            <span class="px-1">·</span>
+            <a href="/docs/versions/" class="link-secondary text-nowrap">All releases</a>
+          </p>
+          <script async="" src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&amp;placement=getbootstrapcom" id="_carbonads_js"></script><div id="carbonads"><span>
+    
+    <span class="carbon-wrap">
+      <a href="https://srv.carbonads.net/ads/click/x/GTND427ECV7DE23YCKBLYKQUCTYIL2JJCE7I6Z3JCAYD627NF67DL27KFTYD427NCW7D65QUCEYIV27WCTAIL5QKC6SITKJLCAADTK3EHJNCLSIZ" class="carbon-img" target="_blank" rel="noopener sponsored">
+        <img src="https://srv.carbonads.net/static/30242/2ba64892272a689daf5cc473b26b988461df56e7" alt="ads via Carbon" border="0" height="100" width="130" data-no-statview="no" style="max-width: 130px;">
+      </a>
+      <a href="https://srv.carbonads.net/ads/click/x/GTND427ECV7DE23YCKBLYKQUCTYIL2JJCE7I6Z3JCAYD627NF67DL27KFTYD427NCW7D65QUCEYIV27WCTAIL5QKC6SITKJLCAADTK3EHJNCLSIZ" class="carbon-text" target="_blank" rel="noopener sponsored">
+        Adobe Creative Cloud for Teams. Put creativity to work.
+      </a>
+    </span>
+    <a href="http://carbonads.net/?utm_source=getbootstrapcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a>
+    </span></div>
+    
+        </div>
+      </div>
+      <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
+        <h1 class="text-body-emphasis">Jumbotron with icon</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+            Call to action
+            <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
+          </button>
+          <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+            Secondary link
+          </button>
+        </div>
+      </div>
+      <div class="container py-3">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+              <span class="fs-4">Pricing example</span>
+            </a>
+      
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a>
+              <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
+              <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
+              <a class="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a>
+            </nav>
+          </div>
+      
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+          </div>
+        </header>
+      
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <h2 class="display-6 text-center mb-4">Compare plans</h2>
+      
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%;"></th>
+                  <th style="width: 22%;">Free</th>
+                  <th style="width: 22%;">Pro</th>
+                  <th style="width: 22%;">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Public</th>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Private</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+              </tbody>
+      
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Permissions</th>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Sharing</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited members</th>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td></td>
+                  <td></td>
+                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+              <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h2>نموذج إتمام الشراء</h2>
+            <p class="lead">فيما يلي مثال على نموذج تم إنشاؤه بالكامل باستخدام عناصر تحكم النموذج في Bootstrap. لكل مجموعة نماذج مطلوبة حالة تحقق يمكن تشغيلها بمحاولة إرسال النموذج دون استكماله.</p>
+          </div>
+      
+          <div class="row g-3">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-body-secondary">عربة التسوق</span>
+                <span class="badge bg-secondary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">اسم المنتج</h6>
+                    <small class="text-body-secondary">وصف مختصر</small>
+                  </div>
+                  <span class="text-body-secondary">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">المنتج الثاني</h6>
+                    <small class="text-body-secondary">وصف مختصر</small>
+                  </div>
+                  <span class="text-body-secondary">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">البند الثالث</h6>
+                    <small class="text-body-secondary">وصف مختصر</small>
+                  </div>
+                  <span class="text-body-secondary">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                  <div class="text-success">
+                    <h6 class="my-0">رمز ترويجي</h6>
+                    <small>EXAMPLECODE</small>
+                  </div>
+                  <span class="text-success">-$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>مجموع (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
+      
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="رمز ترويجي">
+                  <button type="submit" class="btn btn-secondary">تحقق</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">عنوان الفوترة</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">الاسم الأول</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      يرجى إدخال اسم أول صحيح.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">اسم العائلة</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      يرجى إدخال اسم عائلة صحيح.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="username" class="form-label">اسم المستخدم</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" id="username" placeholder="اسم المستخدم" required="">
+                    <div class="invalid-feedback">
+                      اسم المستخدم الخاص بك مطلوب.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">البريد الإلكتروني <span class="text-body-secondary">(اختياري)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      يرجى إدخال عنوان بريد إلكتروني صحيح لتصلكم تحديثات الشحن.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">العنوان</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 الشارع الأول" required="">
+                    <div class="invalid-feedback">
+                      يرجى إدخال عنوان الشحن الخاص بك.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">عنوان 2 <span class="text-body-secondary">(اختياري)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="شقة 24">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">البلد</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">اختر...</option>
+                      <option>الولايات المتحدة الأمريكية</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      يرجى اختيار بلد صحيح.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">المنطقة</label>
+                    <select class="form-select" id="state" required="">
+                      <option value="">اختر...</option>
+                      <option>كاليفورنيا</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      يرجى اختيار اسم منطقة صحيح.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">الرمز البريدي</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      الرمز البريدي مطلوب.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">عنوان الشحن هو نفس عنوان الفوترة الخاص بي</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">احفظ هذه المعلومات في المرة القادمة</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">طريقة الدفع</h4>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credit">بطاقة ائتمان</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="cash" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="cash">نقد</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">الاسم على البطاقة</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                    <small class="text-body-secondary">الاسم الكامل كما هو معروض على البطاقة</small>
+                    <div class="invalid-feedback">
+                      الاسم على البطاقة مطلوب
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">رقم البطاقة</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      رقم بطاقة الائتمان مطلوب
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">تاريخ انتهاء الصلاحية</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      تاريخ انتهاء الصلاحية مطلوب
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">الرمز الثلاثي (CVV)</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      رمز الحماية مطلوب
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-primary btn-lg" type="submit">الاستمرار بالدفع</button>
+              </form>
+            </div>
+          </div>
+        </main>
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+          <p class="mb-1">© 2023-2017 اسم الشركة</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">سياسة الخصوصية</a></li>
+            <li class="list-inline-item"><a href="#">اتفاقية الاستخدام</a></li>
+            <li class="list-inline-item"><a href="#">الدعم الفني</a></li>
+          </ul>
+        </footer>
+      </div>
+
+</body>
+
+</html>
